@@ -37,8 +37,7 @@ public class TestBase {
 			System.setProperty(key, value);
 		}
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(Testutil.pageloadtimeout, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(Testutil.pageloadtimeout, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Testutil.implicitwait, TimeUnit.SECONDS);
 		
 		
